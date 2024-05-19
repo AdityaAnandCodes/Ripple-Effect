@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfxintrfg8h2w"]
+
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_ydcbt"]
+[ext_resource type="Texture2D" uid="uid://gs4i0c8ltq6g" path="res://assets/game_over.png" id="2_2j43g"]
+[ext_resource type="AudioStream" uid="uid://bd7i7vr740vmn" path="res://assets/sounds/WhatsApp Audio 2024-05-19 at 07.36.01_3918ebac.mp3" id="3_yvjqu"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_right = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ydcbt")
+
+[node name="GameOver" type="Sprite2D" parent="."]
+position = Vector2(557, 314)
+scale = Vector2(0.630729, 0.661111)
+texture = ExtResource("2_2j43g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 361.0
+offset_right = 624.0
+offset_bottom = 444.0
+
+[node name="Restart" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath("../Quit")
+text = "Restart"
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Restart")
+text = "Quit
+"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(433, 361)
+stream = ExtResource("3_yvjqu")
+
+[connection signal="pressed" from="VBoxContainer/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

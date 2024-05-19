@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bocwvpyg4otj6"]
+
+[ext_resource type="Texture2D" uid="uid://pd13abuhn28e" path="res://assets/1.png" id="1_n1nil"]
+[ext_resource type="Texture2D" uid="uid://1whrdw0kvlqy" path="res://assets/2.png" id="2_hunjn"]
+[ext_resource type="Texture2D" uid="uid://ojb6v1pxnstu" path="res://assets/3.png" id="3_v1q6x"]
+[ext_resource type="Texture2D" uid="uid://bj57ou1o6ptpl" path="res://assets/4.png" id="4_f1dgf"]
+[ext_resource type="Texture2D" uid="uid://i481bxx4ub0m" path="res://assets/5.png" id="5_d3ij4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s1b2f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_n1nil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hunjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v1q6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_f1dgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d3ij4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="sandclock" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-50, 45.125)
+scale = Vector2(0.152344, 0.171387)
+sprite_frames = SubResource("SpriteFrames_s1b2f")
+autoplay = "default"
+frame_progress = 0.333569

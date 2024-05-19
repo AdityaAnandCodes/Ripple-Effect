@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtf0bfybtuj77"]
+
+[ext_resource type="Script" path="res://scripts/instructions.gd" id="1_ai816"]
+[ext_resource type="Texture2D" uid="uid://bl0ttgen2h3y1" path="res://assets/Instruction.png.jpg" id="2_qs05f"]
+
+[node name="Instructions" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ai816")
+
+[node name="Instruction_png" type="Sprite2D" parent="."]
+position = Vector2(585, 335.75)
+scale = Vector2(0.71875, 0.740556)
+texture = ExtResource("2_qs05f")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -46.0
+offset_top = -72.0
+offset_right = 53.0
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Back" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "      Back       "
+
+[connection signal="pressed" from="VBoxContainer/Back" to="." method="_on_back_pressed"]

@@ -1,0 +1,52 @@
+[gd_scene load_steps=7 format=3 uid="uid://bul5lkuew2dxj"]
+
+[ext_resource type="Script" path="res://scripts/minimap.gd" id="1_xml1e"]
+[ext_resource type="Texture2D" uid="uid://d3o0vxdtvy4gh" path="res://assets/panel_woodDetail_blank.png" id="1_yih86"]
+[ext_resource type="Texture2D" uid="uid://cogpryg3xpafg" path="res://assets/ME_Singles_City_Terrains_16x16_Sidewalk_2_28.png" id="2_xycv3"]
+[ext_resource type="Texture2D" uid="uid://dtgfoi1p6lkr4" path="res://assets/minimapIcon_arrowA.png" id="3_0oysu"]
+[ext_resource type="Texture2D" uid="uid://cw55e1kr8w5bq" path="res://assets/minimapIcon_jewelRed.png" id="4_4r06a"]
+[ext_resource type="Texture2D" uid="uid://ck8tjn3d2be78" path="res://assets/minimapIcon_exclamationYellow.png" id="5_nwl2r"]
+
+[node name="Minimap" type="MarginContainer"]
+custom_minimum_size = Vector2(200, 200)
+offset_right = 138.0
+offset_bottom = 138.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_xml1e")
+
+[node name="Frame" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = ExtResource("1_yih86")
+patch_margin_left = 64
+patch_margin_top = 64
+patch_margin_right = 64
+patch_margin_bottom = 64
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Grid" type="TextureRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("2_xycv3")
+stretch_mode = 1
+
+[node name="PlayerMarker" type="Sprite2D" parent="MarginContainer/Grid"]
+position = Vector2(74, 75)
+texture = ExtResource("3_0oysu")
+
+[node name="MobMarker" type="Sprite2D" parent="MarginContainer/Grid"]
+visible = false
+position = Vector2(-1, -1)
+texture = ExtResource("4_4r06a")
+
+[node name="AlertMarker" type="Sprite2D" parent="MarginContainer/Grid"]
+visible = false
+position = Vector2(-7, 35)
+texture = ExtResource("5_nwl2r")

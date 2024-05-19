@@ -1,0 +1,79 @@
+[gd_scene load_steps=11 format=3 uid="uid://nu0eoirm2de8"]
+
+[ext_resource type="Script" path="res://scripts/Rain_water_harvesting/rwh_7.gd" id="1_31wie"]
+[ext_resource type="Texture2D" uid="uid://crx25hwpfw6vd" path="res://assets/RainWaterHarvestingTank2.png" id="1_vih8w"]
+[ext_resource type="Texture2D" uid="uid://bc6e4502orbgb" path="res://assets/FX001_01.png" id="2_114wm"]
+[ext_resource type="Texture2D" uid="uid://73b3tw0x783f" path="res://assets/FX001_02.png" id="3_5hapi"]
+[ext_resource type="Texture2D" uid="uid://h4kdudrcd6s7" path="res://assets/FX001_03.png" id="4_ybc0p"]
+[ext_resource type="Texture2D" uid="uid://d1ght1bdqdtin" path="res://assets/FX001_04.png" id="5_rwxru"]
+[ext_resource type="Texture2D" uid="uid://cqikbcy5lf4kk" path="res://assets/FX001_05.png" id="6_7thk1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4cswx"]
+radius = 11.0
+height = 60.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mbg3m"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_114wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5hapi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ybc0p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_rwxru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7thk1")
+}],
+"loop": false,
+"name": &"Done",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xode"]
+radius = 183.698
+
+[node name="rwh_7" type="StaticBody2D"]
+collision_layer = 65
+collision_mask = 64
+script = ExtResource("1_31wie")
+
+[node name="Watertank" type="Sprite2D" parent="."]
+position = Vector2(2, 0)
+texture = ExtResource("1_vih8w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 88)
+shape = SubResource("CapsuleShape2D_4cswx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(5, 18)
+scale = Vector2(24.5781, 25.5703)
+sprite_frames = SubResource("SpriteFrames_mbg3m")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 64
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_3xode")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -70.0
+offset_top = 27.0
+offset_right = 70.0
+offset_bottom = 54.0
+text = "Press E to interact"
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
