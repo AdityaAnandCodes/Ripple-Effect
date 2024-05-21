@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://vlo7d8lb11ja"
+path="res://.godot/imported/Plastic Bottle Crush Sounds _ ASMR-[AudioTrimmer.com].ogg-77eca3332d2b22ee31a3c8061dccaccd.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/Plastic Bottle Crush Sounds _ ASMR-[AudioTrimmer.com].ogg"
+dest_files=["res://.godot/imported/Plastic Bottle Crush Sounds _ ASMR-[AudioTrimmer.com].ogg-77eca3332d2b22ee31a3c8061dccaccd.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

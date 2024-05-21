@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxn8js4ovkm6w"
+path="res://.godot/imported/WhatsApp Audio 2024-05-19 at 07.36.02_0bba7b39.mp3-46ece7e5ff02f09ae25cbd9373c736b5.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/WhatsApp Audio 2024-05-19 at 07.36.02_0bba7b39.mp3"
+dest_files=["res://.godot/imported/WhatsApp Audio 2024-05-19 at 07.36.02_0bba7b39.mp3-46ece7e5ff02f09ae25cbd9373c736b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
