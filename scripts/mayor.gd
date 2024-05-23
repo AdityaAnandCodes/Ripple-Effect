@@ -45,7 +45,7 @@ var current_dir="none"
 
 
 func _ready():
-	anim.play("idlefront")
+	anim.play("idleFront")
 	
 
 func _physics_process(delta):

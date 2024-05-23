@@ -17,8 +17,8 @@ grow_vertical = 2
 script = ExtResource("1_ai816")
 
 [node name="Instruction_png" type="Sprite2D" parent="."]
-position = Vector2(585, 335.75)
-scale = Vector2(0.71875, 0.740556)
+position = Vector2(580.5, 332)
+scale = Vector2(0.724375, 0.748889)
 texture = ExtResource("2_qs05f")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
