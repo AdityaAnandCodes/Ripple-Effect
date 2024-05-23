@@ -75,6 +75,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries, please contact us at [adityaanandatwork276@gmail.com].
+For any inquiries, please contact us at [adityaanandatwork276@gmail.com].  
 
-Thank you for checking out Ripple Effect! We hope you enjoy playing the game as much as we enjoyed creating it. Let's continue to leverage open source software to create a positive social impact.
+Thank you for checking out Ripple Effect! We hope you enjoy playing the game as much as we enjoyed creating it. Let's continue to leverage open source software to create a positive social impact.  
+
+
+###
+![Ripple Effect](https://github.com/AdityaAnandCodes/Ripple-Effect/blob/main/assets/IMG_8808.jpg)
