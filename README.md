@@ -1,51 +1,80 @@
-<p align="center">
-  <img width="1280" alt="cover" src="https://user-images.githubusercontent.com/2206700/189457799-6327bab0-b085-4421-8640-6a18e395d17d.png">
-</p>
+# Ripple Effect
 
-<h1 align="center">Dialogic</h1>
+![Ripple Effect](https://github.com/AdityaAnandCodes/Ripple-Effect/blob/main/assets/Thumbnail.png)
 
-<p align="center">
-  Create dialogs, characters and scenes to display conversations in your Godot games.
-</p>
 
-## Table of Contents
-- [Version](#version)
-- [Installation](#installation)
-- [Documentation](#documentation)
-- [Testing](#testing)
-- [Credits](#credits)
-- [License](#license)
+## Problem Statement
 
-## Version (Currently in Alpha) 
+Track Chosen - Game Development / AR / VR  
+Leveraging the world of open source to generate a social impact  
 
-Dialogic 2.0 is a major rewrite of the plugin including many compatibility-breaking changes. It is currently developed exclusively for Godot 4 and requires at least Godot 4.1.
+## Overview
 
-![Godot v4.0](https://img.shields.io/badge/Godot-v4.1-%23478cbf)
+**Ripple Effect** is a idea we went with during Aventus 2.0 - a National Level 24 hours Hackathon. the idea was clear We wanted to address the issue of water scarcity and promote water conservation through the game while letting the player enjoy the thrill and fun a game offers. So we went with a time constraint based game to overwhelm the player with task this also gave the game the prespective of generating a urgency for actions against the ongoing crisis. we faced issues as the mechanics grew complex and with the time frame we had to cut down many mechanics while execution. but it turned out to be a great project where we got to learn many things and it ended up as a fun to play game while addressing the issues it was supposed to which led us to secure 2nd Prize in the hackathon.  
 
-[If you are looking for the Godot 3.5 version you can find it here.](https://github.com/dialogic-godot/dialogic/tree/dialogic-1)
+## Gameplay
+
+The game offers a immersive environment with good aesthetic map and functioning components that offer interactivity to the player within the map. Ripple effect tries to lure you into a world where you are responsible for the water level of the city and to win or to survive you must perform actions that helps raise or maintain the water level of the city while the ongoing crisis and problems deal major damage to the water level. you must be fast and act carefully within the time frame to win the game. sounds and animations are features added in the game to maintain the immersiveness of the game.
+
+### Objectives
+
+- Interact with the citizens.
+- Install Rain Water Harvesting system into houses. 
+- Address issues like pipe leaks and open water taps that accelerate water loss.
+- Ensure the city's water level remains above zero to win the game.
+- Play within the time-contraint.  
+
+## Features
+
+- Developed in **Godot Engine**
+- Utilizes assets from **Limizo** on [itch.io](https://limezu.itch.io/modernexteriors)
+- Music and sounds sourced from **open sources**
+- Immersive Gameplay
+- Engaging mechanics designed to promote social awareness and impact
+- Developed and polished within a 24-hour timeframe
+
+## Development Team
+
+- **Map, Cutscene, and Menu**: Created by [https://github.com/raksha-bv]
+- **Game Mechanics**: Developed by Me [https://github.com/AdityaAnandCodes]
+
+## Assets
+
+- **Art Assets**: Purchased from Limizo on [itch.io](https://itch.io)
+- **Music and Sounds**: Sourced from various open source platforms
 
 ## Installation
-Follow the installation instructions on our [Getting Started](https://dialogic-docs.coppolaemilio.com/getting-started.html#1-installation--activation) documentation.
 
-Dialogic comes with an auto-updater so you can install future versions right from within the plugin.
+1. Clone the repository:
 
-## Documentation
-As the plugin is still in alpha state, only limited documentation is available. However you can read all the existing documentation here:
-[Dialogic Documentation](https://dialogic-docs.coppolaemilio.com/)
+   ```bash
+   git clone https://github.com/AdityaAnandCodes/Ripple-Effect.git
+2. Open the project in Godot Engine.
+3. Run the game from the Godot editor.
 
-## Testing
-Dialogic uses [Unit Tests](https://en.wikipedia.org/wiki/Unit_testing) to ensure specific parts function as expected. These tests run on every git push and pull request. The framework to do these tests is called [gdUnit4](https://github.com/MikeSchulze/gdUnit4) and our tests reside in the [addons/dialogic/Tests/Unit](https://github.com/dialogic-godot/dialogic/tree/main/addons/dialogic/Tests/Unit) path. We recommend installing the `gdUnit4` add-on from the `AssetLib`, with this add-on, you can run tests locally.
+## Contribution
 
-To get started, take a look at the existing files in the path and read the documentation to [create your first test](https://mikeschulze.github.io/gdUnit4/first_steps/firstTest/).
+We welcome contributions to enhance the game further. To contribute, please follow these steps:
 
-## Credits
-Made by [Emilio Coppola](https://github.com/coppolaemilio) and [Jowan-Spooner](https://github.com/Jowan-Spooner).
-
-Contributors: [zaknafean](https://github.com/zaknafean), [thebardsrc](https://github.com/thebardsrc), [and more!](https://github.com/dialogic-godot/dialogic/graphs/contributors).
-
-Special thanks: [Arnaud](https://github.com/arnaudvergnet), [AnidemDex](https://github.com/AnidemDex), [ellogwen](https://github.com/ellogwen), [Tim Krief](https://github.com/timkrief), [Toen](https://twitter.com/ToenAndreMC), Òscar, [Francisco Presencia](https://francisco.io/), [M7mdKady14](https://github.com/M7mdKady14).
-
-### Thank you to all my [Patreons](https://www.patreon.com/coppolaemilio) and Github sponsors for making this possible!
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
 
 ## License
-This project is licensed under the terms of the [MIT license](https://github.com/dialogic-godot/dialogic/blob/main/LICENSE).
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Limizo for the amazing art assets.
+- Open source community for the music and sound effects.
+- Aventus 2.0 hackathon organizers for the opportunity and challenge.
+
+## Contact
+
+For any inquiries, please contact us at [adityaanandatwork276@gmail.com].
+
+Thank you for checking out Ripple Effect! We hope you enjoy playing the game as much as we enjoyed creating it. Let's continue to leverage open source software to create a positive social impact.
